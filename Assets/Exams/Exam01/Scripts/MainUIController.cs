@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 
 namespace Exam.Exam01
 {
@@ -9,6 +8,8 @@ namespace Exam.Exam01
     {
         [SerializeField] private Button _btnBag;
         [SerializeField] private Button _btnSkill;
+        [SerializeField] private Button _btnCloseBag;
+        [SerializeField] private Button _btnCloseSkill;
         [SerializeField] private GameObject _bagPanel;
         [SerializeField] private GameObject _skillPanel;
 
@@ -16,6 +17,9 @@ namespace Exam.Exam01
         {
             _btnBag.onClick.AddListener(() => ShowPanel(_bagPanel));
             _btnSkill.onClick.AddListener(() => ShowPanel(_skillPanel));
+
+            _btnCloseBag.onClick.AddListener(() => _bagPanel.SetActive(false));
+            _btnCloseSkill.onClick.AddListener(() => _skillPanel.SetActive(false));
         }
 
         /// <summary>
