@@ -3,7 +3,7 @@
 > **用途**：把你和 Chat **已经踩过的坑** 固化成清单，避免同一错误反复出现。  
 > **维护**：每踩 **1 个新坑** → 本文件 + 档案 **§十一** + **§11.25/§11.27** + [`UI布局举一反三矩阵.md`](../Assets/Exams/Docs/UI布局举一反三矩阵.md)  
 > **关联**：[`学员能力档案_lixiaotong.md`](学员能力档案_lixiaotong.md) §十一 · [`教学规范.md`](../Assets/Exams/Docs/教学规范.md) §11.13 · `_gen_skill_btn_states.py`  
-> **W4 专题**：§二-O（Exam01 重做 · 2026-07-09～07-11）· **K1d**（交付仅 Docs · 2026-07-11）· [`W4-RPG周-当前.md`](../01-成长路线/W4-RPG周-当前.md)
+> **W4 专题**：§二-O · **K1d/W4d1/W4d3** · [`W4-RPG周 §二-C`](../01-成长路线/W4-RPG周-当前.md)
 
 ---
 
@@ -138,11 +138,9 @@
 | **K1** | 说「进行下一步」或「帮改 UI」后，Chat **直接 Write 改 Prefab/场景/脚本** · 无 Inspector 全表 · 无 📌A/🔷B · 无「请你本人操作」 | 把「帮忙」理解成 **代做** · 跳过 **§三 模板 B/C** · 跳过 **§五 禁止清单 ⑤** | **未说「帮我改/检查并修复」禁止 Write/StrReplace 工程** | **进行下一步** → 只输出 **模板 B 或 C** · **不改仓库** · 脚本 = **请你本人敲** + §11.9 范本 + 逐行表 |
 | **K1b** | 「帮我把 UI 改一下」→ AI 直接改 `GameSceneUI.prefab` | 未走 **模板 D**（先列文件 · 等你确认） | 口语「帮改」≠ 授权改库 | 先 **模板 D 列将改文件** · 你回复 **「可以改」** 后再动 · 否则只给 **模板 B Inspector 表** |
 | **K1c** | 第 4 步脚本步 · AI 创建 4 个 `.cs` 并拖好场景引用 | 把 **模板 C** 当成「我帮你写完」 | 脚本步禁止 **一次代写整卷 + 挂引用标完成** | **模板 C**：路径 + 挂载表 + L1 范本（**对照敲**）+ 逐行表 · 工程状态写 **🔒 待学员完成** |
-| **K1d** | 说「**交付 Exam01**」/「交付完成」后，Chat **直接改 7 个 `.cs`** 并档案标 **L1+P-L1 ✅** | 把 **§11.7 档案六步** 误解成 **代修脚本 + 代达标 P-L1** · 忽略 [`教学规范.md`](../Assets/Exams/Docs/教学规范.md) **「录入前只读验收 · 不写入 Scripts」** | **「交付 ExamXX」/「开下一套」= 仅 §11.7 改档案 md** · **禁止**未经「帮我改/检查并修复」Write 脚本/场景/Prefab | 先 **只读验收** 列 P-L1 缺口（模板 C）→ 学员自改 · 档案写 **待 Play 验收** / **P-L1 待补** · 误改须 **`git checkout` 还原** |
+| **K1d** | 说「**交付 ExamXX**」→ AI **代改脚本** 并档案标 L1+P-L1 ✅ | 把 **§11.7** 当成代修+P-L1 · 忽略「录入前不写入 Scripts」 | **交付/开下一套 = 仅 Docs** · 误改 **git 还原** | 见 [`教学规范`](../Assets/Exams/Docs/教学规范.md) **§11.7** |
 
-**与 #1 关系**：#1 =「进行最后一步」代写整卷；**K1 = 任一步擅自改库 + 省略模板七块** · **K1d = K1 在「交付/录入」触发词上的变体**。
-
-**与 A2 关系**：**A2** = 开下一套须录入档案；**K1d** = 录入时 **只动 Docs** · 不动学员 Scripts。
+**与 #1 关系**：#1 =「进行最后一步」代写整卷；**K1 = 任一步擅自改库** · **K1d = K1 在「交付/录入」上的变体**。
 
 **Coach 发送前（追加 §四 checklist）**：
 
@@ -150,61 +148,34 @@
 □ 学员是否说了「帮我改 / 检查并修复 / 可以改」？否 → 禁止 Write StrReplace Prefab/Scene/Script
 □ 「进行下一步」→ 是否按 §三 模板 B 或 C 全文输出（含 A/B/验收/请回复）？
 □ 是否写了「已完成/已替你做好/引用都拖好了」？（禁止，除非模板 D 且学员确认跑通）
+□ **排课/推荐序**：是否读了 **W4 §二-C §1 本周真相**？是否含 **§0+§3 逐条为何**？（**W4d3**）
 ```
 
 **Exam03 工程备注（2026-07-02）**：Chat 曾擅自改 `GameSceneUI.prefab` · `Bullet.prefab` · `Exam03_GameScene.unity` · 新增 4 脚本 — **不算学员 P-L1 自写** · 须 **Git 回退或按讲义重做**。
 
 ---
 
-## 二-O、W4 · Exam01 重做（动画 · 相机 · 技能 · 2026-07-09～07-11 · **你亲自踩完**）
+## 二-O、W4 · 排课 / 进度 / Exam01（2026-07-09～11 · **你亲自踩完**）
 
-> **周次**：阶段 01 **第 4 周** · 工程 `Major4_week4-Text` · 素材池 `Assets/Exams/Exam01/`  
-> **卷面**：试题1 · 登录 + 背包 + 技能弹窗 + 主角 Animator  
-> **SiKi 对照**：黑暗女王 S1 · `Master.controller` · `pelvis/Main_Camera` 运镜骨
+### O-1 · Exam01 技术（动画 · 相机 · 技能）
 
-### O-1 · Animation Event（Skill1.anim）
+| # | 症状 | 一句话解法 |
+|:--:|------|------------|
+| **A1/A2** | AnimationEvent no receiver | `public void OnAttack()` 挂 Player |
+| **Cam1** | 相机挂 Player 不跟 Skill6 | `pelvis/Main_Camera` 骨 + 相机子级 |
+| **SK2** | SetTrigger 对不上 | `animTrigger` = Skill1/2/4/6 |
+| **BG1** | 背包开两次变 40 个 | `_itemsCreated` 防重复 |
+| **SK3** | Editor using 进运行时 | 删 `UnityEditor.*` |
 
-| # | 你看到的（症状） | 根因 | **禁止再犯** | **现行标准** |
-|:-:|-----------------|------|--------------|--------------|
-| **A1** | Console：`AnimationEvent 'OnAttack' has no receiver` | `Skill1.anim` 有 **OnAttack / OnAttackEnd** 事件 · Player 上无 **public** 同名方法 | 禁止删动画事件（SiKi 课程需要） | `PlayerAnimEvent` 挂 **Animator 同物体** · **`public void OnAttack()`** · **`public void OnAttackEnd()`** · 无参 |
-| **A2** | 写了 `PlayerAnimEvent` 仍报错 | 方法写成 **`void` 缺 public** | 禁止非 public 接收 | 动画事件回调必须 **public** · 名与事件 **完全一致** |
-
-### O-2 · 技能镜头 / Root Motion（Skill6 · 多重暗影打击）
-
-| # | 你看到的（症状） | 根因 | **禁止再犯** | **现行标准** |
-|:-:|-----------------|------|--------------|--------------|
-| **Cam1** | Main Camera 挂 **Player 根** · 放 Skill6 **镜头不跟** | 位移在动画路径 **`root/pelvis/Main_Camera`** · 不是 Player Transform | 禁止以为「挂 Player 就跟」 | **pelvis 下建空物体 `Main_Camera`** · Unity 相机挂其下 |
-| **Cam2** | 挂 `root` 骨骼仍不对 | `Skill6` 的 RootT 走 **Animator 根运动** · `root` GameObject **几乎无 LocalPosition 曲线** | 禁止只挂 skeleton `root` | 以 **`pelvis/Main_Camera`** 为准（SiKi 运镜骨） |
-| **Cam3** | 开 **Apply Root Motion** 仍不动 | Player 有 **CharacterController** · 无 **OnAnimatorMove** | 禁止只靠勾选指望整角色平移 | Exam01 L1：**相机跟骨**即可 · 整角色位移留 Stage4/W4 战斗 |
-| **Cam4** | 跟上了但 **构图偏** | 动画已带位移 · 相机上又叠 **旧 Local 偏移** | 禁止在骨骼和相机上双重大偏移 | 先 **Reset** `Main_Camera` 骨 + 相机 Local → Play 暂停微调 → **Copy/Paste Component** |
-
-**调构图**：只改 **`Main Camera` 子物体 Local**（Y 抬高 · Z 负值拉远）· 不动动画 K 的骨骼。
-
-### O-3 · 技能数据与 Animator
+### O-2 · Coach 排课 / 档案（**W4d1 · W4d3 · 与 K1d 并列**）
 
 | # | 你看到的（症状） | 根因 | **禁止再犯** | **现行标准** |
-|:-:|-----------------|------|--------------|--------------|
-| **SK1** | `_skills` 数组不知写哪 | 数据类与控制器分工不清 | 不要把数组写在 `SkillData.cs` | 数组写在 **`SkillController.cs`** · `SkillData.cs` 只定义字段 |
-| **SK2** | SetTrigger 名对不上 | 讲义写 `Skill{index+1}` · 工程 **Master** 实际是 **Skill1/2/4/6** | 禁止硬编码 index+1 | `SkillData.animTrigger` 与 **Master.controller Parameters** 一致 |
-| **SK3** | 打包/编译报错风险 | `using UnityEditor.Tilemaps` 在运行时脚本 | 禁止 Editor 程序集进 Player 脚本 | 删 **UnityEditor.\*** · **Unity.VisualScripting** 无用 using |
+|:--:|-----------------|------|--------------|--------------|
+| **W4d1** | 03/06/07 被标「已交付/P+1 快补」沉底 · 08/05 标「续做第 N 步」 | 读 **档案 §六 W2 日期行** · 忽略 **W4 工程已重置** · 学员 **本周只练 Exam01** | **禁止**用 §六 历史 ✅ 排 **本周** 序 | **§二-C §1** 为唯一真相 · §六 加 **W4本周** 列 · 历史标 **†W2** |
+| **W4d3** | 只给「#1 Exam01 #2 Exam08…」· 学员问 **「为什么」** 答不清 | 算了五维分但 **没写前提**（W2 vs W4）· **没写 v2 废止原因** | 禁止 **只丢序列表** | 排课 Chat **必含** [`W4 §二-C §0+§3`](../01-成长路线/W4-RPG周-当前.md) **逐条为何** |
+| **K1d** | 「交付 Exam01」→ 代改 7 脚本 | 误读 §11.7 | 交付 **仅 Docs** | 见 **§二-M K1d** |
 
-**Master 映射（Exam01）**：Skill1→暗影魔法球 · Skill2→暗影连弹 · Skill4→暗影冲击波 · Skill6→多重暗影打击。
-
-### O-4 · 背包与 UI 工程化
-
-| # | 你看到的（症状） | 根因 | **禁止再犯** | **现行标准** |
-|:-:|-----------------|------|--------------|--------------|
-| **BG1** | 第二次开背包 **物品变 40 个** | `BagController` **OnEnable** 每次打开都 `Instantiate` · 无防重复 | 禁止无守卫的动态创建 | `_itemsCreated` 只建一次 · 或改 **首次打开** 钩子 |
-| **UI2** | 关场景潜在泄漏监听 | `MainUIController` 无 **OnDestroy** | 禁止只 AddListener 不解绑 | **OnDestroy RemoveListener**（P-L1 · 链 **E1**） |
-
-### O-5 · Coach / 进度文档
-
-| # | 症状 | 根因 | **禁止** | **正确** |
-|:-:|------|------|----------|----------|
-| **W4d1** | AI 按档案教「W2 欠账 Exam05/08」 | **W2 实进度文档过期** · 学员 **W2 已全部完成** | 用 W2 归档表推当前作业 | **W4 以 Exam01 重做 + Stage01_W4 为主** · W2 仅作读码参照 |
-| **W4d2** | 技能名用 RPG 占位（冰霜箭等） | UI Prefab 与 **SiKi Master 动画** 不同套命名 | 交付前不对齐 animTrigger | 弹窗用 **暗影系** 或与 `SkillNameText` 统一 |
-
-**Coach 教 Exam01 第 7～8 步前**：读本节 **A1/Cam1/SK2** · 确认 Hierarchy 有 **`pelvis/Main_Camera`**。
+**Coach 排十套序前**：读 **§二-C §0**（v2 为何错）→ **§1**（本周真相）→ **§3**（现行序 + 为何）。
 
 ---
 
@@ -224,7 +195,7 @@
 
 | # | 症状 | 根因 | **禁止** | **现行标准** |
 |:-:|------|------|----------|--------------|
-| **A2** | 学员开 **Exam07** 但 **Exam06 未进档案** | 只认口头「交付完成」 | 等学员催录入 | **开下一套同一轮 §11.7 归档上一套**（**仅 Docs** · 见 **K1d**） |
+| **A2** | 学员开 **Exam07** 但 **Exam06 未进档案** | 只认口头「交付完成」 | 等学员催录入 | **开下一套同一轮 §11.7 归档上一套** |
 
 ---
 
@@ -260,7 +231,6 @@
 | 检查一下 | 只读 | 只验收 + 讲义步骤 |
 | **进行下一步** | **AI 擅自 Write 改工程** | **§三 B/C · 不改仓库 · K1** |
 | **帮改 UI / 帮改一下** | **未走模板 D 直接改 Prefab** | **先列文件或只教 B 表 · K1b** |
-| **交付 ExamXX / 录入档案 / 开下一套** | **AI 代改脚本并标 L1+P-L1 ✅** | **§11.7 仅 Docs · 只读验收 · K1d** |
 | **直接输出 Chat** | **未走 Doc 双遍对照** | **§11.28 三遍 · R1** |
 | 进行最后一步 | AI 代写整卷 | §〇 不代做 |
 | 范本太 low | 未读自写/Major3/4 | §11.16 |
@@ -272,6 +242,7 @@
 | RemoveAllListeners / 持久 lambda | 试卷 L1 低标 · B 未按行业 | **§11.21** · **E1/E2** |
 | B 只有生命周期 | **F0** | **§11.22 FICM 八维** |
 | B 太笼统无启发 | **G1** | **§11.23 小灶** · 链讲义 |
+| **交付 ExamXX / 推荐练习序** | **用 §六 W2 历史沉底 · 只给表不给为何** | **W4 §二-C §1 真相 · §0+§3 为何 · W4d1/W4d3** |
 | 开下一套不录入档案 | **A2** | **§11.7 v7.14** |
 | **第二套同类题 P-L1 照搬第一套** | **P3** | **§11.29** · 四文件同轮更新递进表 |
 | Inspector 丢含义列 | **O1** | **§11.26 三列表** |
@@ -289,14 +260,6 @@
 | 不教布局只说不拷 Prefab | **P1** | **§11.25 标准树** |
 | 小步太碎 | 一步一 Chat | §11.12 大步 |
 | Prefab 只拖 | 无 Inspector 全表 | §11.13 体检 |
-| AnimationEvent no receiver | **A1/A2** | **public 方法 · 挂 Animator 物体** |
-| 相机挂 Player 不跟技能 | **Cam1/Cam2** | **pelvis/Main_Camera 骨** |
-| Apply Root Motion 无效 | **Cam3** | **跟骨或 OnAnimatorMove** |
-| _skills 写错文件 | **SK1** | **SkillController 内数组** |
-| Trigger 名 index+1 | **SK2** | **animTrigger 对齐 Master** |
-| Editor using 进运行时 | **SK3** | **删 UnityEditor.\*** |
-| 背包重复 Instantiate | **BG1** | **_itemsCreated 守卫** |
-| 用 W2 欠账表排 W4 | **W4d1** | **学员口述进度为准** |
 
 ---
 
@@ -317,11 +280,7 @@
 □ 告知学员 Reimport + 重拖 Sprite Swap
 □ 新坑 → 本文件 + 档案 §十一 各 +1 行
 □ **Chat 发送前 · K1**：学员是否授权改库？「进行下一步」是否只出模板 B/C？
-□ **Chat 发送前 · K1d**：是否只说「交付/录入/开下一套」？若是 → **仅 §11.7 改档案 md** · 禁止 Write Scripts/Scene/Prefab
 □ **Chat 发送前 · R1**：是否走完 **§11.28** 总 Doc → 本套 Doc → 对照表 9 项？
-□ 教 **Exam01 技能动画/镜头** 前读 **§二-O**（**A1 · Cam1 · SK2**）· Hierarchy 有 **`pelvis/Main_Camera`**
-□ 教 **PlayerAnimEvent** 前确认方法 **public**（**A2**）
-□ 排课/做题顺序以 **学员当前周次（W4）** 为准 · 勿用过期 W2 欠账表（**W4d1**）
 ```
 
 ---
@@ -330,8 +289,7 @@
 
 | 日期 | 版本 | 说明 |
 |------|------|------|
-| 2026-07-11 | **v1.20** | **K1d**：「交付 ExamXX」≠ 授权改脚本 · **§11.7 仅 Docs** · Exam01 七脚本 **git 还原** |
-| 2026-07-11 | **v1.19** | **§二-O W4 Exam01**：Animation Event **A1/A2** · SiKi 相机骨 **Cam1～Cam4** · 技能 **SK1～SK3** · 背包 **BG1** · 文档 **W4d1/W4d2** |
+| 2026-07-11 | **v1.22** | **§二-O W4d1/W4d3** · **K1d** · v2 排课复盘 · **§二-C v3** 写入 W4 周 |
 | 2026-07-02 | **v1.18** | **R1/R1b/R1c** Doc 双遍对照 · **§11.28** · 先更 Doc 再 Chat |
 | 2026-07-02 | **v1.17** | **K1/K1b/K1c** Exam03 Chat 擅自改 Prefab/场景/脚本 · 链 **§三/§五/§11.14** · 学员明示「记住踩坑」 |
 | 2026-06-24 | **v1.16** | **U7** VLG 半套 · Reset 子 Anchor · Sibling 顺序 · v7.16.1 · Exam08 场景对照 |
