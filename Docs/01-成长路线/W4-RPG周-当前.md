@@ -28,8 +28,23 @@
 |----|------|
 | Lab 包 | `Assets/Labs/Stage01_W3/` 归档保留 |
 | Exam 工程 | Exam01～10 **已重置**（仅 Prefab + 空文件夹骨架） |
+| W2 十套卷 | **学员已全部完成**（2026-07-11 确认）· 作读码参照 · 不重复排欠账 |
 | W4 目标 | **登录 → 主场景 → 背包/属性 → 战斗** Play 闭环 |
 | 阶段硬指标 | **P≥82 · K≥75 · S2 入门** |
+
+---
+
+## 二-B、W4 Exam01 踩坑索引（2026-07-11 · 已写入记忆库）
+
+> 完整表：[`踩坑记忆库_lixiaotong.md`](../02-学员档案/踩坑记忆库_lixiaotong.md) **§二-O**
+
+| 代号 | 症状 | 一句话解法 |
+|:----:|------|------------|
+| A1/A2 | AnimationEvent no receiver | `public void OnAttack()` 挂 Player |
+| Cam1 | 相机挂 Player 不跟 Skill6 | `pelvis/Main_Camera` 骨 + 相机子级 |
+| SK2 | SetTrigger 对不上 | 用 `animTrigger` = Skill1/2/4/6 |
+| BG1 | 背包开两次变 40 个 | `_itemsCreated` 防重复 |
+| SK3 | 编译风险 | 删 `UnityEditor.*` using |
 
 ---
 
