@@ -228,12 +228,10 @@ L2(现在) → L3(Cinemachine) → M1(RPG功能线) → M2(URP/池/Profiler)
 | 2026-07-03 | Exam04 | 开套第 1 步即转 Exam08 | 跳套 | 讲义 v3 保留 · 可续做 | ☐ |
 | 2026-07-04 | Exam08 | Build **Main=2 Server=3** 反序 | 交付 | **0 Login 1 Loading 2 Server 3 Main** | ☐ |
 | 2026-07-04 | Exam08 | `ServerController` 未写 **SelectedServer** | 递进 P-L1 | 点服时赋值 | ☐ |
-| 2026-07-11 | **W4 Exam01** | `AnimationEvent OnAttack has no receiver` | 方法非 **public** / 未挂 Player | **A1/A2** · `PlayerAnimEvent` | ☐ |
-| 2026-07-11 | **W4 Exam01** | 相机挂 Player/root · Skill6 镜头不跟 | 动画驱动 **`pelvis/Main_Camera`** 骨 | **Cam1/Cam2** · 补骨+子相机 | ☐ |
-| 2026-07-11 | **W4 Exam01** | Apply Root Motion 仍不动 | **CharacterController** 挡根运动 | **Cam3** · 跟骨不跟 Root Motion | ☐ |
-| 2026-07-11 | **W4 Exam01** | 背包二次打开物品翻倍 | **OnEnable** 无防重复 | **BG1** · `_itemsCreated` | ☐ |
-| 2026-07-11 | **W4 Exam01** | `SkillController` 含 `UnityEditor.Tilemaps` | Editor 程序集进运行时 | **SK3** · 删无用 using | ☐ |
-| 2026-07-11 | **W4 Exam01** | `MainUIController` 无 OnDestroy | 只绑不解绑 | **UI2** · RemoveListener | ☐ |
+| 2026-07-11 | **W4 Exam01** | `PlayerAnimEvent` 方法非 public | 动画事件无接收器 | 学员自改 **public**（模板 C · **A1**） | ☐ |
+| 2026-07-11 | **W4 Exam01** | `SkillController` 含 `UnityEditor.Tilemaps` | Editor 程序集 | 学员自删 Editor using（**SK3**） | ☐ |
+| 2026-07-11 | **W4 Exam01** | `MainUIController` 无 OnDestroy | lambda 未解绑 | 学员自补 OnDestroy（**UI2** · P-L1） | ☐ |
+| 2026-07-11 | **Coach** | 说「交付 Exam01」→ AI 代改 7 脚本并标交付 | **K1d** · 误读 §11.7 | **仅 Docs 归档** · 脚本 **git 还原** | ☑ |
 
 ---
 
@@ -255,7 +253,7 @@ L2(现在) → L3(Cinemachine) → M1(RPG功能线) → M2(URP/池/Profiler)
 
 | Exam | 完成日 | 试卷 L1 | P-L1 | P+1 | P-Score | **提升的 K 单元** |
 |------|--------|:-------:|:----:|:---:|:-------:|-------------------|
-| **Exam01（登录+背包+技能）** | **2026-07-09** | ☐ | ☐ | — | — | **W4 重做** · 第 1～7 步 ✅ · **第 8 步交付 ← 当前** · 踩坑 [**§二-O**](踩坑记忆库_lixiaotong.md) |
+| **Exam01（登录+背包+技能）** | 进行中 | ⚠️ | ☐ | — | 84* | **W4 重做** · 第 8 步待 Play · [**§二-O**](踩坑记忆库_lixiaotong.md) · **K1d 脚本已还原** |
 | **Exam02（动画与状态机）** | **2026-07-09** | ☐ | ☐ | — | — | U06 U07 U08 · 待开讲 |
 | **Exam05** | 进行中 | **逻辑链✅** | **Battle⚠️** | **82*** | Min 双轨 · U03↑ |
 | **Exam06** | **2026-06-24** | ✅ | ✅ | **4/6** | **83** | U01 U03 · Layout · 小灶01/02 |
@@ -343,13 +341,14 @@ L2(现在) → L3(Cinemachine) → M1(RPG功能线) → M2(URP/池/Profiler)
 | **35** | **W4 Exam01 AnimationEvent no receiver** | `OnAttack` 方法非 public | **§二-O A1/A2** · 踩坑库 v1.19 | **2026-07-11** |
 | **36** | **技能镜头挂 Player 不跟 Skill6** | 未用 **pelvis/Main_Camera** 运镜骨 | **§二-O Cam1～Cam4** | **2026-07-11** |
 | **37** | **AI 用 W2 欠账表排课** · 学员 W2 已全部完成 | 档案/W2 归档与口述进度不一致 | **W4d1** · 以 W4 当前任务为准 | **2026-07-11** |
+| **38** | **说「交付 Exam01」→ AI 代改 7 脚本并标 L1+P-L1 ✅** | 把 §11.7 当成代修+P-L1 达标 · 忽略「录入前不写入 Scripts」 | **K1d** · **交付/开下一套 = 仅 Docs** · 误改 **git 还原** | **2026-07-11** |
 
 ---
 
 ## 十一-B、踩坑记忆库（专题 · 与 §十一 表联动）
 
 > **完整清单**：[`踩坑记忆库_lixiaotong.md`](踩坑记忆库_lixiaotong.md)  
-> **当前专题**：Layout **U1～U6** · **O1/O1d** · **P2 主动审计** · Button **B1～B4** · 血条 **H1～H3** · **Chat 改库 K1** · **Doc 对照 R1** · **W4 Exam01 · §二-O A1/Cam/SK/BG**
+> **当前专题**：Layout **U1～U6** · **O1/O1d** · **P2 主动审计** · Button **B1～B4** · 血条 **H1～H3** · **Chat 改库 K1/K1d** · **Doc 对照 R1** · **W4 Exam01 · §二-O A1/Cam/SK/BG**
 
 | 专题 | 条目 | Coach 何时读 |
 |------|------|--------------|
@@ -363,10 +362,10 @@ L2(现在) → L3(Cinemachine) → M1(RPG功能线) → M2(URP/池/Profiler)
 | **Prefab 优先** | **O1d · §11.13** | UI 大步 · Glob Prefab |
 | **UI 布局矩阵** | **U1～U6 · §11.25** | [`UI布局举一反三矩阵.md`](../../Assets/Exams/Docs/UI布局举一反三矩阵.md) |
 | **主动审计** | **P2 · §11.27** | **UI 大步开讲前** · 禁止等学员测 |
-| **Chat 改库** | **K1 · §三/§五** | **每次「进行下一步/帮改」前** · 无授权禁止 Write |
+| **Chat 改库** | **K1/K1d · §三/§五/§11.7** | **「进行下一步/帮改/交付」前** · 无授权禁止 Write · **交付仅 Docs** |
 | **Doc 双遍对照** | **R1 · §11.28** | **每次 Chat 发送前** · 总 Doc→本套 Doc→**10 项**对照 |
 | **同类题递进** | **P3 · §11.29** | **开套/能力校准** · 禁止第二套照搬上套 P-L1 |
-| Chat | §十一 #1～#37 | 每次开聊 §十三 + **§11.28** · **§11.29** · **W4 读 §二-O** |
+| Chat | §十一 #1～#38 | 每次开聊 §十三 + **§11.28** · **§11.29** · **W4 读 §二-O** · **交付读 K1d** |
 
 ---
 
@@ -396,6 +395,7 @@ L2(现在) → L3(Cinemachine) → M1(RPG功能线) → M2(URP/池/Profiler)
 | 2026-07-09 | **84** | **58** | **Exam01（登录+背包+技能）开套** · U01～U05 U17 U18 · 分步教程 8 步写全 · 当前第 1 步 |
 | 2026-07-09 | **84** | **58** | **Exam02（动画与状态机）暂停** · 优先完成 Exam01 |
 | 2026-07-11 | **84*** | **58** | **踩坑库 v1.19 §二-O** · W4 Exam01 动画事件/相机骨/技能 Trigger · 档案 §四+#35～37 |
+| 2026-07-11 | **84*** | **58** | **踩坑 K1d** · 「交付 Exam01」误代改 7 脚本 → **git 还原** · §11.7 **仅 Docs** · Exam01 **第 8 步待 Play** |
 
 ---
 
