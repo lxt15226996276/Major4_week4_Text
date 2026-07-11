@@ -12,6 +12,7 @@ namespace Exam.Exam01
         [SerializeField] private Text _titleText;
         [SerializeField] private Text _descText;
         [SerializeField] private Button _btnClosePropUp;
+        [SerializeField] private Animator _palyerAnim;
 
         private readonly SkillData[] _skills =
         {
@@ -40,6 +41,8 @@ namespace Exam.Exam01
             _titleText.text = skill.skillName;
             _descText.text = skill.description;
             _skillPopUp.SetActive(true);
+            if (!string.IsNullOrEmpty(skill.animTrigger))
+                _palyerAnim.SetTrigger(skill.animTrigger);
         }
         private void OnDestroy()
         {

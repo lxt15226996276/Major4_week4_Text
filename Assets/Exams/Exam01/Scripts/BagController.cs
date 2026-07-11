@@ -8,7 +8,7 @@ namespace Exam.Exam01
         [SerializeField] private GameObject itemPrefab;
         [SerializeField] private Transform contentRoot;
         private int itemCount = 20;
-        private void OnEnable()
+        void Start()
         {
             CreatItems();
         }
