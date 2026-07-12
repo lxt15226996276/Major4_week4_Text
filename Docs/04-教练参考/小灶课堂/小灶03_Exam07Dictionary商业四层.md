@@ -3,6 +3,7 @@
 > **触发**：**§11.24** → 你回复 **`小灶：Dictionary`** → **本 Chat 独占**  
 > **定位**：不占大步 Chat · 架构 / 模式 / API / 面试话 / 对照你自写 `AccountData` + `AuthController`  
 > **双轨**：**交卷** 仍用 Exam07 P-L1（Dict + TryGetValue + 锁 3s + DDoL）· **理解/面试** 用本讲义商业分层  
+> **W4d5**：**W4 试题7 卷面不含 Login/Dictionary** · 本小灶 = **†W2/U17 P+1 扩展** · 开套大步只认 [`预制体盘点 §三`](../06-Exam工程/预制体盘点_W4.md)  
 > **吸收**：[`外部路线吸收库.md`](../外部路线吸收库.md) **§6.x F07-AUTH** · 手游账号体系通用实践 · U17 Dictionary
 
 ---

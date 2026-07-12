@@ -12,7 +12,7 @@
 | 2026-06-24 | Exam06 | Game UI Layout | F06-BUI | L1✅ | HLG+CSF+Pivot | 小灶：UI分层 | 跳过 | — |
 | 2026-06-24 | Exam06 | BattleController | F06-BATTLE | L1✅ P-L1✅ | 单脚本OK | 小灶：血量 | ✅ | §11-A |
 | 2026-06-24 | Exam06 | **整包归档** | F06-ALL | ✅ | v7.14 开07触发 | — | — | P **83** |
-| 2026-06-24 | Exam07 | AccountData+AuthController | F07-AUTH | L1进行中 | Dict合体·缺CurrentUser·Instacne typo | 小灶：Dictionary | ✅ | **小灶03** |
+| 2026-06-24 | Exam07 †W2 | AccountData+AuthController | F07-AUTH | †W2 L1 | Dict合体·缺CurrentUser·Instacne typo | 小灶：Dictionary | ✅ | **小灶03** · **W4 试题7 卷面不用** |
 | 2026-07-03 | **Exam03** | **战斗射击加血** | **F03-COMBAT** | L1进行中 | 敌人侧Trigger·无池·UI耦Health·相机L2 | 小灶：Exam03战斗 | **✅开** | **小灶04** |
 
 **下一模块完成时**：Coach 自动追加行 + 提问。
