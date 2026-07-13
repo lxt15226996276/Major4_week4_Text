@@ -84,7 +84,7 @@
 |------|------|
 | **卷面 L1** | **单主界面** · 动态主角+跟随 · 移动动画 · **BGM** · **双技能3s CD** · **右上退出**（[`考试试题8.doc`](../../Tests/考试试卷/考试试题8.doc)） |
 | 核心 | **单场景** `Exam08_GameScene` · Build **Index 0** · **无 Login/Loading/Server** |
-| Prefab | **`Exam08/GameSceneUI`** · 差量 **`Exam06/07 BtnMute`** · **`Exam07/Player`** · ~~Login/Server~~ **遗留不用** |
+| Prefab | **`Exam08/GameSceneUI`** + **`Exam06/BtnMute`** + **`Exam08/CloseButton→BtnExit`** + **`Exam07/Player`** · G1′ 差量 **+3** · ~~Login/Server~~ 遗留 |
 | 讲义 | [`Exam08/分步教程.md`](../../Assets/Exams/Exam08/Docs/分步教程.md) **第 1 步**（**2026-07-13 按试卷纠偏**） |
 | ⚠️ **K1** | 「进行下一步」= **只教 · 不改仓库** |
 

@@ -63,24 +63,27 @@
 ```
 ① Glob `Assets/Exams/**/Prefabs/*.prefab` + `Assets/Prefabs/**`（**全项目 · W4d6**）
 ② Read 本套 `Scenes/*.unity` + `Scripts/*.cs`（**P0 工程现状**）
-③ 写「Prefab 候选表」：路径 · **卷面匹配** · 结论 ✅/❌ · 差量（**不限本套文件夹**）
+③ 写「Prefab 候选表」：路径 · **卷面匹配** · **G1′ 差量合计** · 结论 ✅/❌ · 差量操作（**不限本套文件夹**）
 ④ 有 ✅ 候选 → Chat/讲义第一小节 = **X.0 体检 + Unpack** · 禁止「UI→Canvas 手搭」为首方案
 ⑤ 完全无候选 → 显式写「本步无同类 Prefab · 手搭」+ §11.26 全表
 ⑥ 讲义与工程 ⚠️脱节 → **先更分步教程/盘点/入口** 再 Chat（**R1d**）
+⑦ **G1′（W4d8）**：≥2 候选时 **必须打分** · 选差量最小组合 · 详 [`预制体盘点 §二-B`](../../../Docs/06-Exam工程/预制体盘点_W4.md)
 ```
 
-### lixiaotong 仓库 · 默认候选（禁止再 Glob 漏掉）
+### lixiaotong 仓库 · 默认候选（禁止再 Glob 漏掉 · **仍须 G1′ 打分**）
 
 | UI 类型 | 默认复用源 |
 |---------|------------|
 | Login | `Exam07/Exam02 LoginSceneUI` · `Exam04/LoginUI` |
 | **Loading** | **`Exam06/Exam05 LoadingCanvas.prefab`** |
 | 选服 | `Exam01/Exam02 ServerSceneUI` |
-| 战斗 HUD | `Exam06/Exam05 GameSceneUI` |
-| 战斗/主角 | `Exam04/Exam01/Exam07 Player` · `Assets/Prefabs/Player` · **`Assets/Animator/Master`** |
-| 静音钮 | `Exam06/Exam07 BtnMute` |
+| 战斗 HUD | **Glob 按卷面** · 试题8 → **`Exam08/GameSceneUI`** + 子 Prefab 组合 |
+| 战斗/主角 | `Exam07/Player`（优先上套）· `Exam04/Player` · `Assets/Prefabs/Player` |
+| 静音钮 | **`Exam06/BtnMute.prefab`** |
+| 退出钮（试题8） | **`Exam08/CloseButton`→`BtnExit`** |
+| 技能特效 | **`Exam03/Bullet`** |
 
-**W4d6**：上表为 **默认起点** · 仍须 **Glob 全池** · 按 **卷面功能** 写候选表 · **禁止** 只读本套 `ExamXX/Prefabs` 旧讲义名。
+**W4d6**：上表为 **默认起点** · 仍须 **Glob 全池 55+ Prefab** · **G1′ 差量最小** 写定稿表 · **禁止** 只读本套 `ExamXX/Prefabs` 旧讲义名。
 
 **反模式 O1d / O1d-2**：有上表资产仍教 UI→Canvas 从零搭 → **不合格 · 先改讲义再 Chat**
 
