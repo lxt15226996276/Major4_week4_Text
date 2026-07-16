@@ -81,7 +81,7 @@
 | 战斗/主角 | `Exam07/Player`（优先上套）· `Exam04/Player` · `Assets/Prefabs/Player` |
 | 静音钮 | **`Exam06/BtnMute.prefab`** |
 | 退出钮（试题8） | **`Exam08/CloseButton`→`BtnExit`** |
-| 技能特效 | **`Exam03/Bullet`** |
+| 技能 VFX（试题8） | **`Exam08/Prefabs/VFX/ShadowSlash`** · **`ShadowImpactNormal`** |
 
 **W4d6**：上表为 **默认起点** · 仍须 **Glob 全池 55+ Prefab** · **G1′ 差量最小** 写定稿表 · **禁止** 只读本套 `ExamXX/Prefabs` 旧讲义名。
 
